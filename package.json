@@ -1,0 +1,15 @@
+{
+    "name": "tdproject",
+    "version": "1.0.0",
+    "description": "",
+    "main": "tailwind.config.js",
+    "scripts": {
+        "run:css": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch"
+    },
+    "author": "atis",
+    "license": "ISC",
+    "dependencies": {
+        "tailwind": "^4.0.0",
+        "tailwindcss": "^3.0.24"
+    }
+}
