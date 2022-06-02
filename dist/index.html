@@ -16,7 +16,7 @@
   <body class="bg-slate-300 font-kanit">
     <nav class="p-5 bg-stone-900 text-white font-extralight">
       <ul class="flex justify-center sm:justify-between">
-        <li><a href="index.html">Atis Ozols</a></li>
+        <li><a href="index.html"><img src="images/logo_white.png" alt="Atis Ozols" class="h-5"></a></li>
         <li>
           <div class="hidden sm:block">
             <ul class="flex">
@@ -28,73 +28,91 @@
         </li>
       </ul>
     </nav>
-    <div class="max-w-6xl text-center justify-items-center ml-auto mr-auto p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-      <a href="stadions.html">
-        <div class="p-4 m-4 rounded-md bg-white  max-w-xs flex flex-col">
-          <img src="images/stadions_square.JPG" class="w-full self-center" />
-          <div class=" self-center">
-            <h3 class="text-black text-center p-4">
-              Tukuma sporta<br />
-              skolas stadions
-            </h3>
-          </div>
-        </div>
-      </a>
-      <a href="kemeri.html">
-        <div class="p-4 m-4 rounded-md bg-white  max-w-xs flex flex-col">
-          <img src="images/kemeri_square.JPG" class="w-full self-center" />
-          <div class=" self-center">
-            <h3 class="text-black text-center p-4">
-              Ķemeru nacionālais<br />
-              dabas parks
-            </h3>
-          </div>
-        </div>
-      </a>
-      <a href="slokenbeka.html">
-        <div class="p-4 m-4 rounded-md bg-white  max-w-xs flex flex-col">
-          <img src="images/sloken_square.JPG" class="w-full self-center" />
-          <div class=" self-center">
-            <h3 class="text-black text-center p-4">
-              Šlokenbekas<br />
-              muiža
-            </h3>
-          </div>
-        </div>
-      </a>
-      <a href="lielupe.html">
-        <div class="p-4 m-4 rounded-md bg-white  max-w-xs flex flex-col">
-          <img src="images/lielupe_square.JPG" class="w-full self-center" />
-          <div class=" self-center">
-            <h3 class="text-black text-center p-4">
-              Lielupes<br />
-              tilts
-            </h3>
-          </div>
-        </div>
-      </a>
-      <a href="laci.html">
-        <div class="p-4 m-4 rounded-md bg-white  max-w-xs flex flex-col">
-          <img src="images/laci_square.JPG" class="w-full self-center" />
-          <div class=" self-center">
-            <h3 class="text-black text-center p-4">
-              Lāču<br />
-              muzejs
-            </h3>
-          </div>
-        </div>
-      </a>
-      <a href="zinatnu.html">
-        <div class="p-4 m-4 rounded-md bg-white  max-w-xs flex flex-col">
-          <img src="images/zinatnu_square.JPG" class="w-full self-center" />
-          <div class=" self-center">
-            <h3 class="text-black text-center p-4">
-              Zinātņu<br />
-              akadēmija
-            </h3>
-          </div>
-        </div>
-      </a>
+    <button class="text-white absolute top-2 right-5 text-3xl sm:hidden" onclick="open_side()">=</button>
+    <div id="sidebar" class="bg-stone-900 w-screen h-screen absolute top-0 right-[-110%]" style="transition: right 0.3s ease">
+      <button class="text-white relative top-4 left-[7%] text-xl sm:hidden" onclick="close_side()">X</button>
+      <div>
+        <ul class="flex">
+          <li class="mr-2"><a href="index.html">Sākumlapa</a></li>
+          <li><a href="about.html">Par mani</a></li>
+          <li class="ml-2"><a href="index_english.html">EN</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="min-h-screen">
+      <div class="max-w-6xl text-center justify-items-center ml-auto mr-auto p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <a href="stadions.html">
+          <div class="p-4 m-4 rounded-md bg-white  max-w-xs flex flex-col">
+            <img src="images/stadions_square.JPG" class="w-full self-center" />
+            <div class=" self-center">
+              <h3 class="text-black text-center p-4">
+                Tukuma sporta<br />
+                skolas stadions
+              </h3>
+            </div>
+          </div>
+        </a>
+        <a href="kemeri.html">
+          <div class="p-4 m-4 rounded-md bg-white  max-w-xs flex flex-col">
+            <img src="images/kemeri_square.JPG" class="w-full self-center" />
+            <div class=" self-center">
+              <h3 class="text-black text-center p-4">
+                Ķemeru nacionālais<br />
+                dabas parks
+              </h3>
+            </div>
+          </div>
+        </a>
+        <a href="slokenbeka.html">
+          <div class="p-4 m-4 rounded-md bg-white  max-w-xs flex flex-col">
+            <img src="images/sloken_square.JPG" class="w-full self-center" />
+            <div class=" self-center">
+              <h3 class="text-black text-center p-4">
+                Šlokenbekas<br />
+                muiža
+              </h3>
+            </div>
+          </div>
+        </a>
+        <a href="lielupe.html">
+          <div class="p-4 m-4 rounded-md bg-white  max-w-xs flex flex-col">
+            <img src="images/lielupe_square.JPG" class="w-full self-center" />
+            <div class=" self-center">
+              <h3 class="text-black text-center p-4">
+                Lielupes<br />
+                tilts
+              </h3>
+            </div>
+          </div>
+        </a>
+        <a href="laci.html">
+          <div class="p-4 m-4 rounded-md bg-white  max-w-xs flex flex-col">
+            <img src="images/laci_square.JPG" class="w-full self-center" />
+            <div class=" self-center">
+              <h3 class="text-black text-center p-4">
+                Lāču<br />
+                muzejs
+              </h3>
+            </div>
+          </div>
+        </a>
+        <a href="zinatnu.html">
+          <div class="p-4 m-4 rounded-md bg-white  max-w-xs flex flex-col">
+            <img src="images/zinatnu_square.JPG" class="w-full self-center" />
+            <div class=" self-center">
+              <h3 class="text-black text-center p-4">
+                Zinātņu<br />
+                akadēmija
+              </h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <footer class="relative bottom-0 w-full drop-shadow-xl mt-10 p-5 bg-stone-900 text-white font-extralight flex flex-col items-center">
+      <img src="images/lvw.png" alt="Logo" class="max-w-logo w-1/4 sm:w-1/5 lg:w-1/6 ">
+      <span class="mt-4">© Atis Ozols 2022</span>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -47,6 +47,12 @@ module.exports = {
       height:{
         custom:'26rem',
         custom1:'22rem'
+      },
+      maxWidth:{
+        logo: '180px'
+      },
+      right:{
+        outside: '-100%'
       }
     },
     plugins: [],

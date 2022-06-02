@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="style.css" />
     <title>Atis Ozols</title>
   </head>
-  <body class="bg-sloken-bg font-kanit">
+  <body class="bg-sloken-bg font-kanit h-full">
     <nav class="p-5 bg-sloken-header text-white font-extralight">
       <ul class="flex justify-center sm:justify-between">
-        <li><a href="index.html">Atis Ozols</a></li>
+        <li><a href="index.html"><img src="images/logo_white.png" alt="Atis Ozols" class="h-5"></a></li>
         <li>
           <div class="hidden sm:block">
             <ul class="flex">
@@ -28,11 +28,11 @@
         </li>
       </ul>
     </nav>
-    <div>
+    <div class="min-h-screen">
       <div class="m-6 rounded-md overflow-hidden flex flex-col justify-center sm:h-custom1 lg:h-custom">
         <img class="w-full " src="images/sloken_cropped.jpg">
       </div>
-      <div class="bg-sloken-card m-6 rounded-md p-6">
+      <div class="bg-sloken-card m-6 text-white rounded-md p-6">
         <h3 class="m-6 text-3xl text-bold">Šlokenbekas muiža</h3>
         <p class="text-xl m-6">Šlokenbekas muiža atrodas Milzkalnē. Atrodas Slocenes upes
           krastā. Šlokenbekas pils dokumentos pirmo reizi minēta 1544.
@@ -40,5 +40,9 @@
           </p>
       </div>
   </div>
+  <footer class="drop-shadow-xl mt-10 p-5 bg-sloken-header text-white font-extralight flex flex-col items-center relative bottom-0 w-full">
+    <img src="images/lvw.png" alt="Logo" class="max-w-logo w-1/4 sm:w-1/5 lg:w-1/6 ">
+    <span class="mt-4">© Atis Ozols 2022</span>
+  </footer>
   </body>
 </html>

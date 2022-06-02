@@ -468,6 +468,90 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.right-full {
+  right: 100%;
+}
+
+.right-\[-100\%\] {
+  right: -100%;
+}
+
+.right-\[-110\%\] {
+  right: -110%;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.right-\[0\] {
+  right: 0;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.left-\[\] {
+  left: ;
+}
+
+.left-\[90\%\] {
+  left: 90%;
+}
+
+.left-\[95\%\] {
+  left: 95%;
+}
+
+.left-\[93\%\] {
+  left: 93%;
+}
+
+.left-\[7\%\] {
+  left: 7%;
+}
+
 .m-6 {
   margin: 1.5rem;
 }
@@ -484,12 +568,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.5rem;
 }
 
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }
 
 .mr-auto {
   margin-right: auto;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -504,8 +604,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.max-w-logo {
+  max-width: 180px;
 }
 
 .max-w-6xl {
@@ -524,6 +652,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -532,8 +664,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-items: center;
 }
 
+.self-end {
+  align-self: flex-end;
+}
+
 .self-center {
   align-self: center;
+}
+
+.justify-self-end {
+  justify-self: end;
 }
 
 .overflow-hidden {
@@ -703,13 +843,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-custom1 {
     height: 22rem;
+  }
+
+  .sm\:w-1\/5 {
+    width: 20%;
   }
 
   .sm\:grid-cols-2 {
@@ -724,6 +885,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1024px) {
   .lg\:h-custom {
     height: 26rem;
+  }
+
+  .lg\:w-1\/6 {
+    width: 16.666667%;
   }
 
   .lg\:grid-cols-3 {
