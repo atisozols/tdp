@@ -28,6 +28,17 @@
         </li>
       </ul>
     </nav>
+    <button class="text-white absolute top-0 p-2 right-3 text-4xl sm:hidden" onclick="open_side()">=</button>
+    <div id="sidebar" class="bg-stadions-blue w-screen h-screen absolute top-0 right-[-110%]" style="transition: right 0.3s ease">
+      <button class="text-white relative top-4 left-[7%] text-3xl sm:hidden" onclick="close_side()">X</button>
+      <div>
+        <ul class="mt-10 flex flex-col justify-center items-center text-white ">
+          <li class="text-3xl mt-8"><a href="index_english.html">Home</a></li>
+          <li class="text-3xl mt-8"><a href="about_english.html">About me</a></li>
+          <li class="text-3xl mt-8"><a href="stadions.html">LV</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="min-h-screen">
         <div class="m-6 rounded-md overflow-hidden flex flex-col justify-center sm:h-custom1 lg:h-custom">
           <img class="w-full " src="images/stadions_cropped.jpg">
@@ -50,5 +61,6 @@
       <img src="images/enw.png" alt="Logo" class="max-w-logo w-1/4 sm:w-1/5 lg:w-1/6 ">
       <span class="mt-4">© Atis Ozols 2022</span>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
